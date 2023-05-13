@@ -74,8 +74,11 @@
         </div>
         
       <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- 2 input fiels first for adding and next for updating, delete or viewing profile -->
+        <input type="hidden" name="action" value="adduser">
+        <input type="hidden" name="userId" id="userId" value="">
       </div>
       </form>
     </div>
@@ -118,8 +121,8 @@
       <td>apli@gmail.com</td>
       <td>9843</td>
       <td>
+        <span>Views</span>
         <span>Edit</span>
-        <span>Profile</span>
         <span>Delete</span>
       </td>
     </tr>
